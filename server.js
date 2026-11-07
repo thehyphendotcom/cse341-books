@@ -12,6 +12,8 @@ const startServer = async () => {
     try {
         await connectToDb();
         
+        // const books = await getDb().collection('books').find({}).toArray();
+        
         app.listen(PORT, () => {
             console.log(`Server listening at 127.0.0.1:${PORT}`);
         });
